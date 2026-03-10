@@ -6,15 +6,15 @@ from email.mime.text import MIMEText
 # --- EMAIL SENDING FUNCTION ---
 def send_email_to_kiran(user_data):
     # Eikhane apnar details bosaun
-    sender_email = "kiranhaldar234@gmail.com"  # Apnar Gmail id
-    receiver_email = "kiranhaldar234@gmail.com" # Jekhane mail jete chan (same hote pare)
+    sender_email = "kiranhaldar234@gmail.com"  
+    receiver_email = "kiranhaldar234@gmail.com" 
     app_password = "euyy kgbp acyr ebfs"    # 16 digit Google App Password
 
     subject = f"New Student Registration: {user_data['Name']}"
     
     body = f"""
     Hello Kiran, 
-    Ekjon notun student form fill-up koreche. Details niche dewa holo:
+    A new student has filled up the registration form. Details:
     
     Full Name    : {user_data['Name']}
     Education    : {user_data['Education']}
@@ -106,4 +106,5 @@ else:
                     st.balloons()
                 else:
                     st.error("Email send failed! Please check App Password.")
+
 
