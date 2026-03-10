@@ -5,7 +5,7 @@ from email.mime.text import MIMEText
 
 # --- EMAIL SENDING FUNCTION ---
 def send_email_to_kiran(user_data):
-    # Eikhane apnar details bosaun
+    # details about yourself;;;;
     sender_email = "kiranhaldar234@gmail.com"  
     receiver_email = "kiranhaldar234@gmail.com" 
     app_password = "euyy kgbp acyr ebfs"    # 16 digit Google App Password
@@ -106,5 +106,6 @@ else:
                     st.balloons()
                 else:
                     st.error("Email send failed! Please check App Password.")
+
 
 
